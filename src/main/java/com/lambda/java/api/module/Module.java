@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
  * @see com.lambda.module.Module
  */
 @SuppressWarnings("unused")
-abstract class Module extends com.lambda.module.Module {
+public abstract class Module extends com.lambda.module.Module {
     public Module(
             @NotNull String name,
             @NotNull String description,
