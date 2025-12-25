@@ -18,6 +18,6 @@ public class LambdaJavaApi implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        LOG.info("Plugin $MOD_NAME $VERSION initialized.");
+        LOG.info("Plugin " + MOD_NAME + " " + VERSION + " initialized!");
     }
 }

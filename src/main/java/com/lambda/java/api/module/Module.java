@@ -4,6 +4,7 @@ import com.lambda.config.settings.complex.Bind;
 import com.lambda.module.tag.ModuleTag;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("unused")
 abstract class Module extends com.lambda.module.Module {
     public Module(
             @NotNull String name,

@@ -3,16 +3,12 @@ package com.lambda.java.api.listener;
 import com.lambda.context.SafeContext;
 import com.lambda.event.Event;
 import com.lambda.event.EventFlow;
-import com.lambda.event.listener.Listener;
 import com.lambda.event.listener.SafeListener;
 import com.lambda.event.listener.UnsafeListener;
 import com.lambda.threading.ThreadingKt;
-import com.lambda.util.Pointer;
 import kotlin.Unit;
 import kotlin.jvm.JvmClassMappingKt;
-import kotlin.properties.ReadOnlyProperty;
 import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.Dispatchers;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.atomic.AtomicReference;
@@ -25,6 +21,7 @@ import java.util.function.Predicate;
  * @see SafeListener.Companion
  * @see UnsafeListener.Companion
  */
+@SuppressWarnings("unused")
 public class Listeners {
     public static <T extends Event> SafeListener<T> listen(
             @NotNull Object owner,
