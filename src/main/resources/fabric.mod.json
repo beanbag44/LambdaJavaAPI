@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${modId}",
+  "version": "${modVersion}",
+  "name": "${modName}",
+  "description": "${modDescription}",
+  "authors": ["${modAuthors}"],
+  "contact": {
+    "homepage": "https://github.com/lambda-client/ExamplePlugin",
+    "sources": "https://github.com/lambda-client/ExamplePlugin"
+  },
+  "license": "GNU General Public License v3.0",
+  "icon": "${modIcon}",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.lambda.java.api.LambdaJavaApi"
+      }
+    ]
+  },
+  "depends": {
+    "lambda": ">=${lambdaVersion}",
+    "fabricloader": ">=${fabricLoaderVersion}",
+    "minecraft": "~${minecraftVersion}",
+    "fabric-api": ">=${fabricApiVersion}+${minecraftVersion}",
+    "fabric-language-kotlin": ">=${kotlinFabricVersion}",
+    "java": ">=${javaVersion}"
+  }
+}
