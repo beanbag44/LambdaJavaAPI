@@ -2,6 +2,9 @@ package com.lambda.java.api.util;
 
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * @see com.lambda.util.Communication
+ */
 @SuppressWarnings("unused")
 public class Communication {
     public static void debug(@NotNull Object caller, @NotNull String message) { com.lambda.util.Communication.INSTANCE.debug(caller, message, ""); }

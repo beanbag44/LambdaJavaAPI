@@ -4,6 +4,9 @@ import com.lambda.config.settings.complex.Bind;
 import com.lambda.module.tag.ModuleTag;
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * @see com.lambda.module.HudModule
+ */
 @SuppressWarnings("unused")
 abstract class HudModule extends com.lambda.module.HudModule {
     public HudModule(
